@@ -1,0 +1,182 @@
+/* =========================
+   PAGE HOME
+========================= */
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background: linear-gradient(
+        270deg,
+        #020024,
+        #090979,
+        #000000
+    );
+/*animation fond dégradé */
+
+    background-size: 400% 400%;
+    animation: bgmove 15s ease infinite;
+
+    font-family: 'Open Sans', sans-serif;
+
+
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER */
+header {
+
+    text-shadow: -4px 2px 5px #000000;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 50px;
+    padding: 10px 20px;
+    border-radius: 57px;
+    background-color: gray;
+    box-shadow: -8px 8px 22px 5px #444444 inset;
+    border: 1px solid #000000;
+    position: relative;
+}
+
+header nav a {
+    color: rgb(87, 164, 228);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header nav ul li:hover {
+    box-shadow: -8px 8px 22px 5px #2e63b4 inset;
+    text-decoration: underline;
+    text-shadow: -2px 2px 2px #000000;
+}
+
+/* TITRES */
+
+header h1 {
+    
+    font-style: oblique;
+    color: #4788a7;
+    font-size: 100px;
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    animation: clignote 2s infinite;
+}
+
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+
+    color: white;
+    font-weight: bold;
+    margin: 15px 2px 2px;
+    padding-right: 10px;
+    
+}
+
+
+/* IMAGE */
+
+#propos img {
+    width: 300px;
+    border-radius: 50%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border: 5px solid #2e63b4;
+    box-shadow: 0px 0px 30px 0px #2e63b4;        
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    word-wrap: break-word;
+    background-color: rgba(15, 36, 48, 0.61);
+    margin: 5em;
+    padding: 2em;
+    border-radius: 30px;
+    box-shadow: 0 25px 60px rgba(241, 240, 240, 0.15);
+    
+    animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* LISTES */
+ #competences ul li {
+    color: rgb(255, 255, 255);
+}
+
+/* TEXTE */
+ p {
+    color: white;
+}
+
+a {
+    color: rgb(206, 245, 247);
+    font-size: medium;
+}
+
+/* FOOTER */
+ footer {
+    font-style: italic;
+    font-size: 12px;
+    text-align: right;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes clignote {
+    0%, 100% {
+        opacity: 1;
+        text-shadow:
+            0 0 5px #2e63b4,
+            0 0 10px #74cbf3;
+    }
+    50% {
+        opacity: 0.9;
+        text-shadow:
+            0 0 10px #2e63b4,
+            0 0 20px #2e63b4;
+    }
+}
+
+@keyframes bgmove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
